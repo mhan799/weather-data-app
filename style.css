@@ -1,0 +1,1451 @@
+    header {
+        position: absolute;
+        color: white;
+    }
+    
+    section,
+    header {
+        width: 100%;
+    }
+    
+    section,
+    .container1 {
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    .container1 {
+        width: 1170px;
+        box-sizing: border-box;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    .logo {
+        padding-left: 15px;
+        float: left;
+        margin-top: 10px;
+    }
+    
+    .container1::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+    
+    .logo>a {
+        font-family: Promo, Helvetica, Arial, sans-serif;
+        font-size: 24px;
+        margin-left: -15px;
+        margin-top: 14px;
+        font-weight: 700;
+        display: inline-block;
+    }
+    
+    header img {
+        margin-right: 10px;
+    }
+    
+    ul {
+        list-style: none;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    header ul {
+        float: right;
+    }
+    
+    header ul>li {
+        display: inline-block;
+        height: 70px;
+        line-height: 35px;
+    }
+    
+    header li a {
+        margin-top: 16px;
+        margin-bottom: 19px;
+        margin-left: 15px;
+        margin-right: 15px;
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 35px;
+        display: inline-block;
+    }
+    
+    header li:nth-child(5) a {
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 1px;
+        margin-left: 6px;
+        margin-right: 0;
+    }
+    
+    header li:nth-child(5) a::before {
+        content: "";
+        background-color: #47c652;
+        border-radius: 50%;
+        width: 10px;
+        height: 10px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 5px;
+    }
+    
+    header li:nth-child(6) a {
+        background-color: rgba(255, 255, 255, .15);
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 1px;
+        border-radius: 3px;
+        margin-right: 0;
+    }
+    
+    .button {
+        background-color: rgb(244, 123, 33);
+        padding-left: 10px;
+        padding-bottom: 1px;
+        padding-right: 10px;
+        margin-right: 0;
+        font-family: Promo, Helvetica, Arial, sans-serif;
+        font-size: 13px;
+        font-weight: 500;
+        text-align: left;
+        border-radius: 5px;
+    }
+    
+    a:link {
+        color: white;
+    }
+    
+    a:visited {
+        color: white;
+    }
+    
+    a:hover {
+        text-decoration: underline;
+    }
+    
+    body {
+        font-size: 14px;
+        font-weight: 400;
+        font-family: 'Open Sans', 'Gill Sans MT', "Gill Sans", Corbel, Arial, sans-serif;
+        line-height: 1.4;
+    }
+    
+    @font-face {
+        font-family: Linearicons;
+        src: url(./Linearicons.ttf);
+    }
+    
+    @font-face {
+        font-family: FriendlyFont;
+        src: url(./FriendlyFont.eot);
+        src: url(./FriendlyFont.otf);
+        src: url(./FriendlyFont.woff);
+    }
+    
+    @font-face {
+        font-family: Promo;
+        src: url(./Promo-Bold.ttf);
+    }
+    
+    .section1 {
+        background-image: url(https://weatherstack.com/site_images/mountains.svg);
+        background-size: cover;
+        background-position: center;
+        padding: 140px 0 160px 0;
+        width: 100%;
+        background-color: #1f4e69;
+        color: white;
+    }
+    /* .main {
+    width: 1140px;
+    display: inline;
+} */
+    
+    .main_left {
+        display: inline-block;
+    }
+    
+    .section1 h2 {
+        font-size: 32px;
+        font-weight: 500;
+        font-family: Promo, Helvetica, Arial, sans-serif;
+        line-height: 40px;
+        margin-bottom: 20px;
+    }
+    
+    .container1 h4 {
+        margin-top: 10px;
+        margin-bottom: 17px;
+        line-height: 25px;
+        font-size: 18px;
+        font-weight: 300;
+        font-family: Promo, Helvetica, Arial, sans-serif;
+    }
+    
+    .numbers {
+        margin-top: 25px;
+        margin-bottom: 15px;
+        display: block;
+        line-height: 20px;
+        font-size: 17px;
+        font-weight: 300;
+        width: 388px;
+        padding: 6px 10px 8px 16px;
+        font-family: Promo, Helvetica, Arial, sans-serif;
+        background-color: rgba(255, 255, 255, 0.1);
+        border: 0 solid rgba(255, 255, 255, 1);
+        border-radius: 17px;
+        box-sizing: border-box;
+    }
+    
+    .numbers::before {
+        font-family: Linearicons;
+        font-weight: 400;
+        font-size: 25px;
+        content: "\e6e2";
+        display: inline-block;
+        position: relative;
+        margin-right: 10px;
+        top: 3px;
+    }
+    
+    .button_left {
+        background-color: rgb(244, 123, 33);
+        display: inline-block;
+        width: 230px;
+        height: 60px;
+        padding-left: 12px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-right: 12px;
+        border: 1px;
+        border-radius: 3px;
+        margin-right: 5px;
+        margin-top: 20px;
+        text-align: center;
+        font-weight: 700;
+        color: white;
+        font-family: Promo, Helvetica, Arial, sans-serif;
+        line-height: 20px;
+        box-sizing: border-box;
+        text-transform: uppercase;
+    }
+    
+    .friendly {
+        font-family: FriendlyFont, sans-serif;
+        font-size: 19px;
+        left: 10px;
+        position: relative;
+    }
+    
+    .weather {
+        width: 492px;
+        height: 292px;
+        border: 4px solid #608094;
+        background-color: #16394c;
+        position: absolute;
+        top: 147px;
+        right: 380px;
+        line-height: 19.6px;
+        border-radius: 10px;
+    }
+    
+    .location {
+        text-align: center;
+        height: 25px;
+        padding-top: 15px;
+    }
+    
+    .location>span {
+        font-weight: bold;
+    }
+    
+    .weather_left {
+        width: 275px;
+        height: 137px;
+        float: left;
+    }
+    
+    .weather_left img {
+        position: absolute;
+        left: 22px;
+        top: 17px;
+    }
+    
+    .weather_left>span {
+        font-weight: bold;
+        text-align: center;
+        width: 100px;
+        position: absolute;
+        top: 130px;
+        left: 40px;
+    }
+    
+    .weather_right {
+        height: 111px;
+        padding-top: 26px;
+        position: absolute;
+        right: 37px;
+        float: right;
+    }
+    
+    .weather_right span {
+        font-size: 13px;
+        margin-bottom: 2px;
+        display: block;
+    }
+    
+    .weather_right span:last-child {
+        font-size: 32px;
+        position: absolute;
+        left: -135px;
+        top: 45px;
+    }
+    
+    .week {
+        clear: both;
+        text-align: center;
+    }
+    
+    .day {
+        display: inline-block;
+        width: 95px;
+        height: 107px;
+    }
+    
+    .days {
+        font-size: 12px;
+        font-weight: 600;
+        display: block;
+        line-height: 16.8px;
+    }
+    
+    .sun {
+        background-size: 60px;
+        font-style: italic;
+        height: 70px;
+        line-height: 19.6px;
+        width: 80px;
+    }
+    
+    .temp {
+        line-height: 19.6px;
+        width: 95px;
+        font-weight: 600;
+    }
+    
+    .section2 {
+        padding-top: 40px;
+        padding-bottom: 12px;
+        background: #eff2f5;
+    }
+    
+    .section2 ul>li:first-child {
+        font-weight: bold;
+        font-size: 15px;
+        width: 185px;
+        text-align: left;
+        position: relative;
+        top: -19px;
+    }
+    
+    .section2 ul>li {
+        display: inline-block;
+        font-family: Promo, Helvetica, Arial, sans-serif;
+        width: 187px;
+        height: 50px;
+    }
+    
+    .deloitte {
+        background: url(https://weatherstack.com/site_images/client_deloitte.svg);
+        background-repeat: no-repeat;
+        background-size: 120px;
+        background-position: center;
+    }
+    
+    .microsoft {
+        background: url(https://weatherstack.com/site_images/client_microsoft.svg);
+        background-repeat: no-repeat;
+        background-size: 135px;
+        background-position: center;
+    }
+    
+    .section2 ul>li.warnerbros {
+        background: url(https://weatherstack.com/site_images/client_warnerbros.svg);
+        background-repeat: no-repeat;
+        background-size: 48px;
+        background-position: center;
+        width: 110px;
+    }
+    
+    .section2 ul>li.wawa {
+        background: url(https://weatherstack.com/site_images/client_wawa.svg);
+        background-repeat: no-repeat;
+        background-size: 85px;
+        background-position: center;
+        width: 132px;
+    }
+    
+    .schneider {
+        background: url(https://weatherstack.com/site_images/client_schneider.svg);
+        background-repeat: no-repeat;
+        background-size: 125px;
+        background-position: center;
+    }
+    
+    .section2 ul>li.ericsson {
+        background: url(https://weatherstack.com/site_images/client_ericsson_2.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 112px;
+    }
+    
+    .section3 {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    
+    .box {
+        padding-top: 18px;
+        padding-bottom: 19px;
+        background-color: rgb(239, 242, 245);
+        border-radius: 5px;
+        text-align: center;
+    }
+    
+    .box div {
+        display: inline-block;
+        padding: 10px;
+        width: 250px;
+        margin-left: 12px;
+        margin-right: 12px;
+        text-align: left;
+        background-color: rgb(235, 239, 244);
+        box-sizing: border-box;
+    }
+    
+    .box h5::before {
+        content: "";
+        display: block;
+        font-family: Linearicons;
+        margin-bottom: 20px;
+        font-size: 30px;
+        font-weight: 400;
+    }
+    
+    .box div:first-child h5::before {
+        content: "\e655";
+    }
+    
+    .box div:nth-child(2) h5::before {
+        content: "\e778";
+    }
+    
+    .box div:nth-child(3) h5::before {
+        content: "\e836";
+    }
+    
+    .box div:last-child h5::before {
+        content: "\e756";
+    }
+    
+    .box h5 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 600;
+    }
+    
+    .box p {
+        margin-bottom: 10px;
+        line-height: 20px;
+    }
+    
+    .section4 {
+        padding-top: 25px;
+        padding-bottom: 65px;
+    }
+    
+    .details {
+        float: left;
+        width: 440px;
+        box-sizing: border-box;
+    }
+    
+    .details h4 {
+        margin-bottom: 15px;
+        font-size: 25px;
+        font-weight: 300;
+        font-family: Promo, Helvetica, Arial, sans-serif;
+        /* height: 64px;*/
+    }
+    
+    .details p {
+        font-size: 15px;
+        margin-bottom: 15px;
+        /*line-height: 20px;*/
+    }
+    
+    .details li {
+        margin-bottom: 5px;
+        font-size: 15px;
+        font-family: Linearicons;
+        font-weight: 500;
+    }
+    
+    .details li::before {
+        content: "";
+        font-size: 25px;
+        position: relative;
+        top: 5px;
+        margin-right: 11px;
+        display: inline-block;
+    }
+    
+    .details li:first-child::before {
+        content: "\e8da";
+    }
+    
+    .details li:nth-child(2)::before {
+        content: "\e8e3";
+    }
+    
+    .details li:nth-child(3)::before {
+        content: "\e786";
+    }
+    
+    .details li:nth-child(4)::before {
+        content: "\e784";
+    }
+    
+    .details li:last-child::before {
+        content: "\e977";
+    }
+    
+    .map {
+        float: right;
+    }
+    
+    .section5 {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        background-color: rgb(24, 65, 87);
+        background-image: url(https://weatherstack.com/site_images/bg_waves_4.svg);
+        background-position: 50% 100%;
+        background-size: cover;
+        color: white;
+        text-align: center;
+    }
+    
+    .section5 h4::before {
+        content: "EXAMPLE";
+        display: block;
+        font-weight: 700;
+        background-color: #416376;
+        width: 100px;
+        font-size: 14px;
+        margin-bottom: 25px;
+        text-align: center;
+        padding: 10px 0 11px 0;
+        border-radius: 99px;
+        box-sizing: border-box;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .section5 h4 {
+        margin-bottom: 15px;
+        font-size: 25px;
+        font-weight: 300;
+    }
+    
+    .section5 h5 {
+        margin-left: 270px;
+        margin-right: 270px;
+        font-size: 20px;
+        font-weight: 500;
+        height: 54px;
+    }
+    
+    .buttons {
+        margin-top: 40px;
+        font-size: 0px;
+    }
+    
+    .buttons li {
+        display: inline-block;
+    }
+    
+    .buttons li:first-child a {
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        background-color: #f47b21;
+    }
+    
+    .buttons li:nth-child(2) a {
+        background-color: #eef2f5;
+        color: rgb(40, 63, 89);
+    }
+    
+    .buttons li:last-child a {
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        background-color: #eef2f5;
+        color: rgb(40, 63, 89);
+    }
+    
+    .buttons li a {
+        width: 225px;
+        padding: 16px 10px 18px 10px;
+        border: 1px solid rgba(0, 0, 0, .1);
+        font-weight: 600;
+        display: inline-block;
+        box-sizing: border-box;
+        font-size: 14px;
+    }
+    
+    .result {
+        width: 673px;
+        background-color: black;
+        margin: 20px auto;
+        height: 732px;
+    }
+    
+    .features {
+        margin-top: 40px;
+    }
+    
+    .features li {
+        display: inline-block;
+        padding: 14px 20px 15px 20px;
+        width: 325px;
+        margin-bottom: 15px;
+        margin-right: 5px;
+        margin-left: 5px;
+        text-align: left;
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 5px;
+    }
+    
+    .features li span {
+        font-size: 15px;
+        font-weight: 600;
+        margin-bottom: 5px;
+    }
+    
+    .features li span::before {
+        margin-bottom: 5px;
+        font-family: Linearicons;
+        font-size: 30px;
+        vertical-align: middle;
+        display: inline-block;
+        font-weight: 300;
+        margin-right: 10px;
+        content: "";
+    }
+    
+    .features li:first-child span::before {
+        content: "\e661";
+    }
+    
+    .features li:nth-child(2) span::before {
+        content: "\e836";
+    }
+    
+    .features li:nth-child(3) span::before {
+        content: "\e7fb";
+    }
+    
+    .features li:nth-child(4) span::before {
+        content: "\e923";
+    }
+    
+    .features li:nth-child(5) span::before {
+        content: "\e668";
+    }
+    
+    .features li:last-child span::before {
+        content: "\e782";
+    }
+    
+    .features li p {
+        margin-top: 8px;
+    }
+    
+    .section6 {
+        padding: 45px 0 50px 0;
+        text-align: center;
+        box-sizing: border-box;
+    }
+    
+    .section6 h4 {
+        font-size: 25px;
+        font-weight: 300;
+        font-family: Promo, Helvetica, Arial, sans-serif;
+    }
+    
+    .section6 h5 {
+        margin-left: 270px;
+        margin-right: 270px;
+        margin-top: 20px;
+        font-size: 20px;
+        font-weight: 500;
+    }
+    
+    .section6 ul {
+        margin-top: 45px;
+        font-size: 0px;
+    }
+    
+    .section6 li {
+        display: inline-block;
+        width: 250px;
+        height: 100px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 5px;
+    }
+    
+    .section6 li.daimler {
+        background-color: #263e6a;
+        background-image: url(https://weatherstack.com/site_images/client_white_daimler.svg);
+        background-size: 175px;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    
+    .section6 li.deloitte {
+        background-color: #eef2f5;
+        background-size: 150px;
+    }
+    
+    .section6 li.ericsson {
+        width: 135px;
+        background-size: 65px;
+        background-color: #01275b;
+        background-position: center;
+        background-image: url(https://weatherstack.com/site_images/client_white_ericsson_2.svg);
+    }
+    
+    .section6 li.microsoft {
+        background-color: #eef2f5;
+        background-size: 175px;
+    }
+    
+    .section6 li.schneider {
+        background-color: #009e4d;
+        background-image: url(https://weatherstack.com/site_images/client_white_schneider.svg);
+        background-size: 150px;
+        width: 200px;
+        margin-right: 0;
+    }
+    
+    .section6 li.warnerbros {
+        background-color: #027ac2;
+        background-image: url(https://weatherstack.com/site_images/client_white_warnerbros.svg);
+        background-size: 65px;
+        width: 190px;
+    }
+    
+    .section6 li.wawa {
+        background-color: #ee2e25;
+        background-image: url(https://weatherstack.com/site_images/client_white_wawa.svg);
+        background-size: 110px;
+    }
+    
+    li.canda {
+        background-color: #eef2f5;
+        background-image: url(https://weatherstack.com/site_images/client_canda.svg);
+        background-size: 90px;
+        width: 135px;
+    }
+    
+    li.mckinsey {
+        background-color: #23477f;
+        background-image: url(https://weatherstack.com/site_images/client_mckinsey.svg);
+        background-size: 250px;
+        width: 260px;
+        background-position-x: 10px;
+    }
+    
+    li.rimowa {
+        background-color: #eef2f5;
+        background-image: url(https://weatherstack.com/site_images/client_rimowa.svg);
+        background-size: 155px;
+        margin-right: 0;
+    }
+    
+    .section7 {
+        padding: 45px 30px 50px 30px;
+        font-size: 15px;
+        line-height: 21px;
+        background-color: rgb(238, 242, 245);
+        box-sizing: border-box;
+    }
+    
+    .section7 p {
+        font-size: 17px;
+        font-weight: 300;
+        text-align: center;
+    }
+    
+    .section7 span::after {
+        content: "\e944";
+        display: inline-block;
+        font-weight: 700;
+        margin-left: 10px;
+        font-family: Linearicons;
+        font-size: 20px;
+        position: absolute;
+    }
+    
+    .section7 span {
+        padding-right: 30px;
+    }
+    
+    .section7 a {
+        padding: 17px 15px;
+        background-color: rgb(244, 123, 33);
+        font-size: 13px;
+        font-weight: 700;
+        border-radius: 5px;
+        margin-left: 20px;
+    }
+    
+    footer {
+        background: rgb(24, 65, 87);
+        padding: 50px 0;
+        color: white;
+    }
+    
+    .container2 {
+        display: flex;
+    }
+    
+    .container2 ul {
+        display: inline-block;
+        text-align: left;
+        width: 196px;
+    }
+    
+    .footer_left {
+        width: 27%;
+        top: 6px;
+        height: 160px;
+        font-size: 12px;
+        position: relative;
+    }
+    
+    .container2 ul li {
+        margin-bottom: 10px;
+    }
+    
+    .footer_logo {
+        text-align: left;
+        font-size: 12px;
+        order: 9;
+    }
+    
+    .social-link {
+        font-size: 12px;
+        margin-top: 20px;
+        display: inline-block;
+        text-align: left;
+    }
+    
+    .social-link div {
+        display: inline-block;
+    }
+    
+    .social-link a {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    
+    .copyright1 {
+        margin-top: 70px;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    
+    .copyright2 {
+        font-size: 12px;
+        line-height: 16.8px;
+        text-align: center;
+    }
+    
+    .free_signup {
+        padding-top: 100px;
+        padding-bottom: 60px;
+        text-align: center;
+        color: #fff;
+        background-image: url(https://weatherstack.com/site_images/mountains.svg);
+        background-color: #1f4e69;
+        background-size: cover;
+    }
+    
+    .free_signup h2 {
+        margin-top: 10px;
+        margin-bottom: 35px;
+        font-size: 30px;
+        font-family: inherit;
+    }
+    
+    .line {
+        text-align: left;
+        width: 450px;
+        margin-bottom: 15px;
+        box-sizing: border-box;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .line label {
+        display: block;
+        color: #333;
+        font-weight: 600;
+        padding: 5px 10px 5px;
+        background-color: #cbd6e3;
+        border-radius: 3px;
+    }
+    
+    .line label .right {
+        float: right;
+    }
+    
+    .line label .right a {
+        color: black;
+    }
+    
+    .line label .right a:visited {
+        color: black;
+    }
+    
+    .account {
+        text-align: left;
+        width: 450px;
+        margin-bottom: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #cbd6e3;
+        border-radius: 3px;
+        padding-bottom: 10px;
+        box-sizing: border-box;
+    }
+    
+    .account_details {
+        font-size: 13px;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding: 10px 10px 10px 40px;
+        margin-bottom: 10px;
+        background-color: #15394c;
+        display: block;
+        border-top-right-radius: 3px;
+        border-top-left-radius: 3px;
+        position: relative;
+    }
+    
+    .account_details::before {
+        font-family: Linearicons;
+        font-size: 20px;
+        text-transform: none;
+        content: "\e71b";
+        font-weight: 400;
+        position: absolute;
+        top: 4px;
+        left: 11px;
+    }
+    
+    .account label {
+        display: inline-block;
+        margin-bottom: 7px;
+        color: #333;
+        font-weight: 600;
+        font-size: 14px;
+        padding: 5px 10px 0;
+    }
+    
+    .star {
+        color: red;
+        font-size: 12px;
+        position: relative;
+        top: -3px;
+    }
+    
+    .account input {
+        border-radius: 3px;
+        border: 1px solid rgba(40, 63, 89, .35);
+        padding: 10px 0;
+        margin-bottom: 15px;
+        margin: 0 10px;
+        box-sizing: border-box;
+        width: 430px;
+    }
+    
+    .billing,
+    .company {
+        text-align: left;
+        padding-bottom: 5px;
+        border: 0;
+        margin: 0 auto 15px;
+        width: 450px;
+        border-radius: 3px;
+        box-sizing: border-box;
+        background-color: #cbd6e3;
+    }
+    
+    .billing>span,
+    .company>span {
+        font-size: 13px;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding: 10px 10px 10px 40px;
+        margin-bottom: 10px;
+        background-color: #15394c;
+        display: block;
+        position: relative;
+        border-top-right-radius: 3px;
+        border-top-left-radius: 3px;
+    }
+    
+    .billing>span::before,
+    .company>span::before {
+        font-family: Linearicons;
+        font-size: 20px;
+        text-transform: none;
+        content: "\e74c";
+        font-weight: 400;
+        position: absolute;
+        top: 4px;
+        left: 11px;
+    }
+    
+    .line1 {
+        margin-bottom: 10px;
+        padding: 5px 10px 0;
+    }
+    
+    .line_double {
+        margin-bottom: 10px;
+        padding: 5px 10px 0;
+    }
+    
+    .billing label,
+    .company label {
+        display: block;
+        margin-bottom: 7px;
+        color: #333;
+        font-weight: 600;
+        font-size: 14px;
+    }
+    
+    .billing input,
+    .billing select,
+    .company input {
+        border-radius: 3px;
+        border: 1px solid rgba(40, 63, 89, .35);
+        padding: 10px 7px;
+        margin-bottom: 15px;
+        margin: 0;
+        box-sizing: border-box;
+        width: 100%;
+        color: #333;
+    }
+    
+    .line_double input {
+        width: 49.5%!important;
+    }
+    
+    .company>span::before {
+        content: "\e60b"!important;
+    }
+    
+    .submit {
+        background-color: #3da07b;
+        display: block;
+        padding: 10px 5px 13px;
+        font-weight: 700;
+        box-sizing: border-box;
+        margin: 0 auto;
+        color: white;
+        width: 450px;
+        border-bottom-left-radius: 3px;
+        border-bottom-right-radius: 3px;
+    }
+    
+    .hidden {
+        display: none;
+    }
+    
+    .note {
+        padding: 14px 25px 10px;
+        color: #000;
+        font-weight: 400;
+        font-size: 13px;
+        background-color: #cbd6e3;
+        box-sizing: border-box;
+        width: 450px;
+        margin: 0 auto;
+        text-align: left;
+        border-top-right-radius: 3px;
+        border-top-left-radius: 3px;
+    }
+    
+    .note a {
+        color: #283f59;
+    }
+    
+    section.fair_pricing {
+        padding: 110px 0 210px;
+        background-image: url(https://weatherstack.com/site_images/mountains.svg);
+        background-color: #1f4e69;
+        color: #fff;
+        background-size: cover;
+        background-repeat: no-repeat;
+        text-align: center;
+    }
+    
+    .fair_pricing h2 {
+        font-size: 32px;
+        font-weight: 500;
+        line-height: 40px;
+        margin-bottom: 20px;
+        font-family: Promo, Helvetica, Arial, sans-serif;
+    }
+    
+    .fair_pricing a {
+        padding: 10px 10px 11px 30px;
+        border-radius: 5px;
+        width: 150px;
+        display: inline-block;
+        font-size: 13px;
+        font-weight: 600;
+        background-color: #fff;
+        box-sizing: border-box;
+        position: relative;
+    }
+    
+    .monthly {
+        border-top-right-radius: 0!important;
+        border-bottom-right-radius: 0!important;
+    }
+    
+    .fair_pricing a.yearly {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        color: #283f59;
+    }
+    
+    .fair_pricing .cycle {
+        font-size: 0px;
+        margin-top: 40px;
+    }
+    
+    .fair_pricing div a.selected {
+        background-color: #15394c;
+    }
+    
+    .cycle a::before {
+        font-family: Linearicons;
+        font-size: 20px;
+        display: inline-block;
+        font-weight: 400;
+        margin-right: 10px;
+        vertical-align: middle;
+        content: "\e98d";
+        position: absolute;
+        left: 10px;
+        top: 5px;
+        text-align: center;
+    }
+    
+    .fair_pricing .cycle a.selected::before {
+        content: "\e999";
+    }
+    
+    .cycle a:hover {
+        text-decoration: none
+    }
+    
+    .cycle a.yearly::after {
+        position: absolute;
+        right: -15px;
+        top: -16px;
+        background-color: #8a9bae;
+        color: #fff;
+        font-size: 11px;
+        padding: 3px 8px 4px 8px;
+        border-radius: 3px;
+        content: "up to 20% Discount";
+        font-weight: 600;
+    }
+    
+    .pricing {
+        padding: 40px 0 65px;
+        text-align: center;
+        background-color: #fff;
+    }
+    
+    section.pricing .container1>ul {
+        margin-top: -150px;
+        color: rgba(22, 34, 47, 1);
+    }
+    
+    section.pricing .container1>ul>li {
+        display: inline-block;
+        text-align: left;
+        margin: 0 5px;
+        width: 211px;
+        border-radius: 5px;
+        position: relative;
+    }
+    
+    .pricing .container1>ul>li>div:first-child {
+        border-radius: 5px;
+        padding-bottom: 10px;
+        background-color: #ebeff4;
+        text-align: center;
+    }
+    
+    .heading {
+        padding: 35px 0 15px;
+    }
+    
+    .heading span {
+        font-size: 18px;
+        font-family: Promo, Helvetica, Arial, sans-serif;
+        font-weight: 300;
+    }
+    
+    .heading span::before {
+        font-family: Linearicons;
+        font-size: 30px;
+        display: inline-block;
+        font-weight: 400;
+        margin-right: 10px;
+        vertical-align: middle;
+        margin-top: -7px;
+        content: "\e605";
+    }
+    
+    .free .heading>span::before {
+        content: "\e64a";
+    }
+    
+    .standard .heading>span::before {
+        content: "\e653";
+    }
+    
+    .professional .heading>span::before {
+        content: "\e647";
+    }
+    
+    .business .heading>span::before {
+        content: "\e637";
+    }
+    
+    .enterprise .heading>span::before {
+        content: "\e60b";
+    }
+    
+    .professional>div:first-child::before {
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: -28px;
+        height: 30px;
+        color: #fff;
+        font-size: 12px;
+        font-family: Promo, Helvetica, Arial, sans-serif;
+        text-transform: uppercase;
+        content: 'Most Popular';
+        background: #15394c;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        line-height: 30px;
+    }
+    
+    section.pricing p {
+        height: 100px;
+        padding: 15px 15px;
+        font-size: 12px;
+        box-sizing: border-box;
+    }
+    
+    .price {
+        margin-bottom: 40px;
+    }
+    
+    .price>span {
+        font-size: 20px;
+        font-weight: 600;
+        margin-right: 2px;
+    }
+    
+    .frequency {
+        font-size: 12px;
+    }
+    
+    .price>span.small_price {
+        vertical-align: top;
+        font-size: 14px;
+    }
+    
+    .yearly_price {
+        color: rgba(0, 0, 0, .4);
+        margin-top: 5px;
+        font-weight: 600;
+    }
+    
+    .pricing a.signup {
+        background-color: #dde1e7;
+        padding: 10px 10px;
+        margin: 0 auto;
+        display: block;
+        font-size: 14px;
+        font-family: Promo, Helvetica, Arial, sans-serif;
+        text-transform: uppercase;
+        color: #848484;
+        width: 90%;
+        border-radius: 3px;
+        box-sizing: border-box;
+    }
+    
+    .pricing .professional a.signup {
+        background-color: #15394c;
+        color: #fff;
+    }
+    
+    .pricing .enterprise a.signup {
+        background-color: #f47b21;
+        color: #fff;
+    }
+    
+    .pricing .container1>ul>li.enterprise>div {
+        color: #fff;
+        background-color: #15394c;
+    }
+    
+    .pricing .container1>ul>li.enterprise>div:first-child {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    
+    .enterprise {
+        color: #fff;
+        background-color: #15394c;
+    }
+    
+    .benefits {
+        margin-top: 25px;
+    }
+    
+    .benefits ul {
+        border-right: 1px solid #dde1e7;
+        margin-right: -7px;
+    }
+    
+    .enterprise .benefits ul,
+    .business .benefits ul {
+        border: 0;
+    }
+    
+    .enterprise .benefits {
+        border-bottom-left-radius: 3px;
+        border-bottom-right-radius: 3px;
+    }
+    
+    .benefits ul li {
+        padding: 0 0 13px 18px;
+    }
+    
+    .benefits ul li::before {
+        font-family: Linearicons;
+        font-size: 20px;
+        display: inline-block;
+        font-weight: 400;
+        margin-right: 10px;
+        margin-top: -3px;
+        content: "\e71f";
+        position: relative;
+        top: 5px;
+    }
+    
+    .benefits ul li.call::before {
+        content: "\e90b";
+    }
+    
+    .benefits ul li.empty::before {
+        visibility: hidden;
+    }
+    
+    .benefits ul li.worth::before {
+        content: "\e75f";
+    }
+    
+    .benefits ul li.worth a::after {
+        font-family: Linearicons;
+        font-size: 20px;
+        display: inline-block;
+        font-weight: 400;
+        margin-left: 6px;
+        vertical-align: middle;
+        margin-top: -4px;
+        content: "\1F6C8";
+        bottom: 2px;
+        position: relative;
+        color: #16222f;
+    }
+    
+    .benefits ul li.https::before {
+        content: "\e668";
+    }
+    
+    .benefits ul li.locate::before {
+        content: "\e778";
+    }
+    
+    .benefits ul li.historical::before {
+        content: "\e8e4";
+    }
+    
+    .benefits ul li.custom::before {
+        content: "\e672";
+    }
+    
+    .benefits ul li.languages::before {
+        content: "\e691";
+    }
+    
+    .benefits ul li.forecast::before {
+        content: "\e647";
+    }
+    
+    .benefits ul li.hour::before {
+        content: "\e8ea";
+    }
+    
+    .benefits ul li.astronomy::before {
+        content: "\e645";
+    }
+    
+    .benefits ul li.bulk::before {
+        content: "\e977";
+    }
+    
+    .benefits ul li.realtime::before {
+        content: "\e655";
+    }
+    
+    .benefits ul li.support::before {
+        content: "\e723";
+    }

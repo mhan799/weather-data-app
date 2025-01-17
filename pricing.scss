@@ -1,0 +1,320 @@
+    $color1: #fff;
+    $color2: black;
+    $bgc: #eff2f5;
+    $p: padding;
+    $size: 15px;
+    $display: block;
+    $display1: inline-block;
+    $list: ( "realtime": '\e655', "histroical": '\e8e4', "forecast": '\e647', "hour": '\e8ea', "bulk": "\e977", "language": '\e691', "location": '\e778', "astronomy": '\e645', );
+    @mixin background($bi, $bs) {
+        background-size: $bs;
+        background-image: $bi;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    
+    @mixin beforeIcon($list, $size, $display) {
+        @each $name,
+        $value in $list {
+            &.#{$name} .heading::before {
+                font-size: $size;
+                content: $value;
+                display: $display;
+                font-family: Linearicons;
+                margin-right: 10px;
+                vertical-align: middle;
+                font-weight: 400;
+                top: 5px;
+                left: 10px;
+                position: absolute;
+                color: #a4b6c5;
+            }
+        }
+    }
+    
+    @font-face {
+        font-family: Linearicons;
+        src: url(./Linearicons.ttf);
+    }
+    
+    .customers {
+        #{$p}: {
+            top: $size;
+            bottom: $size - 3px;
+        }
+        ul {
+            li {
+                display: inline-block;
+                font-weight: 300;
+                font-size: $size;
+                font-family: Promo, Helvetica, Arial, sans-serif;
+                width: 187px;
+                height: 50px;
+                text-align: left;
+                position: relative;
+                &.deloitte {
+                    @include background(url(https://weatherstack.com/site_images/client_deloitte.svg), 120px);
+                }
+                &.microsoft {
+                    @include background(url(https://weatherstack.com/site_images/client_microsoft.svg), 135px);
+                }
+                &.warnerbros {
+                    @include background(url(https://weatherstack.com/site_images/client_warnerbros.svg), 48px);
+                    width: 110px
+                }
+                &.wawa {
+                    @include background(url(https://weatherstack.com/site_images/client_wawa.svg), 85px);
+                    width: 132px;
+                    top: -4px;
+                    left: 4px;
+                }
+                &.schneider {
+                    @include background(url(https://weatherstack.com/site_images/client_schneider.svg), 125px);
+                    top: 4px;
+                }
+                &.ericsson {
+                    background-image: url(https://weatherstack.com/site_images/client_ericsson_2.svg);
+                    width: 112px;
+                    top: -1px;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                }
+                &:first-child {
+                    top: -19px;
+                }
+            }
+        }
+    }
+    
+    .map_features {
+        #{$p}: {
+            top: 50px;
+            bottom: 40px;
+        }
+        background-color: $bgc;
+        @include background(url(https://weatherstack.com/site_images/world_map_vector_objects.svg), 950px);
+        text-align: center;
+        background-position-y: 110px;
+        .container1 {
+            h4 {
+                font-size: 25px;
+                font-weight: 300;
+                font-family: Promo, Helvetica, Arial, sans-serif;
+                margin-bottom: 260px;
+                margin-top: 0
+            }
+            .row {
+                #{$p}: {
+                    top: 20px;
+                    right: 0;
+                    left: 125px;
+                    bottom: 25px;
+                }
+                position: relative;
+                margin: 0 auto;
+                text-align: left;
+                max-width: 1000px;
+                box-sizing: border-box;
+                @include beforeIcon($list, 60px, $display1);
+                &.realtime {
+                    border-top: 2px dashed #dde2e6;
+                    padding-top: 50px;
+                    .include {
+                        margin-top: 50px;
+                    }
+                     ::before {
+                        top: 45px!important;
+                    }
+                }
+                &.location {
+                    height: auto
+                }
+                .heading {
+                    font-size: 16px;
+                    display: $display;
+                    margin-bottom: 10px;
+                    font-weight: 600;
+                    #{$p}: 0
+                }
+                p {
+                    margin-bottom: 10px;
+                    font-size: 14px;
+                    max-width: 500px;
+                }
+                .include {
+                    position: absolute;
+                    margin: 20px 0;
+                    height: 82px;
+                    border-left: 2px dashed #dde2e6;
+                    padding-left: 45px;
+                    padding-top: 17px;
+                    text-align: left;
+                    width: 240px;
+                    box-sizing: border-box;
+                    right: 0;
+                    top: 0;
+                    span:first-child {
+                        display: block;
+                        font-weight: bold;
+                        background: #416376;
+                        width: 80px;
+                        border-radius: 5px;
+                        color: $color1;
+                        text-align: center;
+                        padding: 3px 0;
+                        font-size: 12px;
+                        margin-bottom: 7px;
+                    }
+                    span:last-child {
+                        text-align: left;
+                    }
+                }
+            }
+        }
+    }
+    
+    .faq {
+        color: rgba(22, 34, 47, 1);
+        #{$p}: 40px 0 10px;
+        background: $color1;
+        text-align: center;
+        h2 {
+            font-size: 25px;
+            margin-bottom: 40px;
+            font-weight: 300;
+            font-family: Promo, Helvetica, Arial, sans-serif;
+        }
+        .question {
+            position: relative;
+            font-weight: 600;
+            margin: 0;
+            padding: 10px 0;
+            border-bottom: 1px solid #dedee1;
+            &::before {
+                content: '';
+                position: absolute;
+                width: 12px;
+                height: 2px;
+                top: 50%;
+                right: 15px;
+                margin-left: -6px;
+                margin-top: -1px;
+                background: #aaadb1;
+                 :active {
+                    .answer {
+                        display: block;
+                    }
+                }
+            }
+        }
+        .answer {
+            display: none;
+            background: #ebeff4;
+            padding: 20px 15px;
+            line-height: 23px;
+            margin-bottom: 0;
+        }
+        .faq_left {
+            display: $display1;
+            width: 500px;
+            vertical-align: top;
+            margin-right: 25px;
+            box-sizing: border-box;
+            .topic {
+                margin: 0 auto 35px;
+                text-align: left;
+                h3 {
+                    color: #949494;
+                    margin-bottom: 10px;
+                    font-size: 16px;
+                }
+                a:link {
+                    color: #2e67a8;
+                    text-decoration: underline;
+                }
+                a:visited {
+                    color: #2e67a8;
+                }
+                .viewall {
+                    padding: 15px 40px 15px 10px;
+                    margin: 0 auto;
+                    display: inline-block;
+                    font-size: 14px;
+                    font-family: Promo, Helvetica, Arial, sans-serif;
+                    width: 300px;
+                    text-align: center;
+                    position: relative;
+                    color: #7e8e9e;
+                    left: -20px;
+                    &::after {
+                        font-family: Linearicons;
+                        font-size: 20px;
+                        font-weight: 700;
+                        content: "\e944";
+                        position: absolute;
+                        right: 40px;
+                        top: 10px;
+                    }
+                }
+            }
+        }
+        .faq_right {
+            display: $display1;
+            width: 500px;
+            vertical-align: top;
+            margin-right: 25px;
+            box-sizing: border-box;
+            text-align: left;
+            h3 {
+                color: #949494;
+                margin-bottom: 10px;
+                font-size: 16px;
+            }
+            a:link {
+                color: #2e67a8;
+                text-decoration: underline;
+            }
+            a:visited {
+                color: #2e67a8;
+            }
+            .api {
+                text-decoration: none !important;
+                color: #283f59 !important;
+            }
+        }
+    }
+    
+    .ready {
+        padding: 45px 30px 50px 30px;
+        font-family: Promo, Helvetica, Arial, sans-serif;
+        font-size: 15px;
+        text-align: center;
+        background: #eef2f5;
+        box-sizing: border-box;
+        span {
+            padding-right: 30px;
+            font-weight: 300;
+            position: relative;
+            top: 1px;
+            &::after {
+                font-family: Linearicons;
+                font-size: 20px;
+                display: inline-block;
+                font-weight: 700;
+                margin-left: 10px;
+                margin-top: 0;
+                content: "\e944";
+                position: absolute;
+            }
+        }
+        a {
+            background: #f47b21;
+            padding: 17px 15px;
+            margin-left: 20px;
+            color: $color1;
+            border-radius: 3px;
+            font-size: 13px;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+    }
