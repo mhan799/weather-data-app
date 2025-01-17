@@ -161,10 +161,6 @@
         background-color: #1f4e69;
         color: white;
     }
-    /* .main {
-    width: 1140px;
-    display: inline;
-} */
     
     .main_left {
         display: inline-block;
@@ -250,7 +246,7 @@
         background-color: #16394c;
         position: absolute;
         top: 147px;
-        right: 380px;
+        right: 40px;
         line-height: 19.6px;
         border-radius: 10px;
     }
